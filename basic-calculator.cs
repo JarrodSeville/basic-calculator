@@ -43,10 +43,16 @@ namespace basic_calc
 
             // When the user wants to divide the numbers
             if (op == '/')
-            {
-                double ans = num1 / num2;
-                Console.WriteLine($"{num1} / {num2} = {ans}");
-            }
+            {   if (num2 != 0)
+                {
+                    double ans = num1 / num2;
+                    Console.WriteLine($"{num1} / {num2} = {ans}");
+                }
+                else
+                {
+                    Console.WriteLine("Error: Division by zero is not allowed.");
+                }
+            }  
         }
     }
 }
