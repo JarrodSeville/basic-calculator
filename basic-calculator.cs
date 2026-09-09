@@ -33,6 +33,20 @@ namespace basic_calc
                 double ans = num1 - num2;
                 Console.WriteLine($"{num1} - {num2} = {ans}");
             }
+
+            // When the user wants to multiply the numbers
+            if (op == '*')
+            {
+                double ans = num1 * num2;
+                Console.WriteLine($"{num1} * {num2} = {ans}");
+            }
+
+            // When the user wants to divide the numbers
+            if (op == '/')
+            {
+                double ans = num1 / num2;
+                Console.WriteLine($"{num1} / {num2} = {ans}");
+            }
         }
     }
 }
