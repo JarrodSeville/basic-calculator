@@ -19,6 +19,20 @@ namespace basic_calc
 
             Console.Write("Enter the second number: ");
             double num2 = double.Parse(Console.ReadLine());
+
+            // When the user wants to add the numbers together
+            if (op == '+')
+            {
+                double ans = num1 + num2;
+                Console.WriteLine($"{num1} + {num2} = {ans}");
+            }
+
+            // When the user wants to subtract the numbers
+            if (op == '-')
+            {
+                double ans = num1 - num2;
+                Console.WriteLine($"{num1} - {num2} = {ans}");
+            }
         }
     }
 }
